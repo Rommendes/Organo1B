@@ -1,0 +1,48 @@
+.colaborador {
+    width: 262px;
+    height: 272px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-bottom: 20px;
+   
+    
+}
+
+.colaborador .cabecalho {
+    background-color:  #F0F0F0;
+    border-radius: 10px 10px 0px 0px;
+}
+.colaborador img {
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+}
+
+.colaborador .rodape {
+    background: #FFFFFF;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+   
+}
+
+.colaborador .rodape h4 {
+    color: #6278F7;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.colaborador .rodape h5 {
+    font-size: 18px;
+    line-height: 22px;
+    color: #212121;
+    padding: 5px;
+    margin-top: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
