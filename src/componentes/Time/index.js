@@ -10,14 +10,15 @@ const Time = (props)=> {
             
             <div className='colaboradores' >
                 {props.colaboradores.map(colaborador => {
-                   console.log( <Colaborador 
+                   /*console.log( <Colaborador 
                     key= {colaborador.nome}
                     nome= {colaborador.nome}
                     cargo= {colaborador.cargo}
                     imagem = {colaborador.imagem} 
                     corDeFundo= {props.corPrimaria}
                     aoDeletar= {props.aoDeletar}//Função anôni
-                    />)
+                    />)*/
+                    //debugger
                    return(
                         <Colaborador 
                         key= {colaborador.nome}
@@ -25,8 +26,10 @@ const Time = (props)=> {
                         cargo= {colaborador.cargo}
                         imagem = {colaborador.imagem} 
                         corDeFundo= {props.corPrimaria}
-                        aoDeletar= {props.aoDeletar}//Função anôni
+
+                        aoDeletar= {props.aoDeletar}//NOVA PROP CRIADA - deletar o colaborador do time
                         />
+                        
                     )
                 } )}
             

@@ -10,8 +10,10 @@ import Rodape from './componentes/Rodape';
 function App() {
 
   const [colaboradores, setColaboradores] = useState([]);
+
   function deletarColaborador ()  {
-    console.log("Deletando Colaborador");
+   // console.log("Deletando Colaborador");
+   debugger
   }
 
   const aoNovoColaboradorAdicionado = (colaborador) => {
@@ -66,7 +68,7 @@ function App() {
 
       <Banner/>
       <Formulario times= {times.map(time => time.nome) } aoColaboradorCadastrado = {colaborador => aoNovoColaboradorAdicionado(colaborador)}/>
-
+     
       
       {times.map(time => 
         <Time //App renderiza o time, isto é transfoma para HTML
