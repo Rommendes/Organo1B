@@ -2,6 +2,8 @@
     text-align: center;
     padding: 32px;
     background-image: url('/public/imagens/fundo.png') ;
+    position: relative;
+  
    
 }
 .time h3{
@@ -21,5 +23,11 @@
     background-size: cover;
     position: relative;
     float: 0;
-    z-index: index 0;;
+    z-index: index 0;
+}
+.input-cor{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+
 }

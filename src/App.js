@@ -11,17 +11,15 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState([]);
 
-  function deletarColaborador ()  {
-   // console.log("Deletando Colaborador");
-   debugger
-  }
+ 
 
   const aoNovoColaboradorAdicionado = (colaborador) => {
     //debugger
 
     setColaboradores([...colaboradores, colaborador])
   }
-  const times = [
+  //const times = [ -> será transfomada em State(estado)
+    const [ times, setTimes] = useState([
     {
       nome: "Desenvolvedor Web",
       corPrimaria: "#E06B69",
@@ -59,9 +57,21 @@ function App() {
       corPrimaria: "#FF8A29",
       corSecundaria: "",
     },
-  ]
+  ])
 
+  function deletarColaborador ()  {
+    // console.log("Deletando Colaborador");
+    //debugger
+   }
 
+   function mudarCordoTime (cor, nome){
+      setTimes(times.map(time => {
+        if(times.nome === nome){
+          time.corPrimaria = cor ;
+        }
+        return time;
+      }))
+   }
   return (
 
     <div className="App">
@@ -72,6 +82,7 @@ function App() {
       
       {times.map(time => 
         <Time //App renderiza o time, isto é transfoma para HTML
+          mudarCor={mudarCordoTime}
           key= {time.nome} 
           nome= {time.nome} 
           corPrimaria= {time.corPrimaria}
