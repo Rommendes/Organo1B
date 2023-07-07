@@ -18,6 +18,7 @@ function App() {
 
     setColaboradores([...colaboradores, colaborador])
   }
+  
   //const times = [ -> será transfomada em State(estado)
     const [ times, setTimes] = useState([
     {
@@ -67,7 +68,7 @@ function App() {
    function mudarCordoTime (cor, nome){
       setTimes(times.map(time => {
         if(times.nome === nome){
-          time.corPrimaria = cor ;
+          time.cor = cor ;
         }
         return time;
       }))
