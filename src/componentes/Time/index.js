@@ -7,9 +7,9 @@ const Time = (props)=> {
 
         (props.colaboradores.length >0 )? <section className='time' style={{backgroundColor: props.corSecundaria}}>
 
-            <input onChange={evento => props.mudarCor(evento.target.value, props.time)} value={props.cor} type= 'color' className= 'input-cor' />
+            <input onChange={evento => props.mudarCor(evento.target.value, props.corSecundaria)} value={props.cor} type= 'color' className= 'input-cor' />
             
-            <h3 style={{borderColor: props.corSecundaria}}>  {props.nome}</h3>
+            <h3 style={{borderColor: props.corPrimaria}}>  {props.nome}</h3>
             
             <div className='colaboradores' >
                 {props.colaboradores.map(colaborador => {
@@ -28,7 +28,7 @@ const Time = (props)=> {
                         nome= {colaborador.nome}
                         cargo= {colaborador.cargo}
                         imagem = {colaborador.imagem} 
-                        corDeFundo= {props.cor}
+                        corDeFundo= {props.corSecundaria}
 
                         aoDeletar= {props.aoDeletar}//NOVA PROP CRIADA - deletar o colaborador do time
                         />
